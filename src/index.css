@@ -107,9 +107,15 @@ article.interests {
   padding: 1.2em 4.6em;
 }
 
+.footer--icons {
+  display: flex;
+  place-content: center;
+  flex-wrap: wrap;
+  gap: 1em;
+}
+
 .fa-brands {
   color: #918E9B;
-  width: 2em;
   font-size: 2rem;
 }
 
