@@ -19,7 +19,6 @@ body {
 
 .container {
   background-color:#1A1B21;
-  border-radius: 0px 0px 30px 30px;
 }
 
 
@@ -33,6 +32,7 @@ a {
   height: 50vh;
   background: url("./assets/images/avatar.jpg") no-repeat center;
   background-size: cover;
+  border-radius: 10px 10px 0px 0px;
 }
 
 .info--cta {
@@ -105,6 +105,7 @@ article.interests {
 .footer {
   background: #161619;
   padding: 1.2em 4.6em;
+  border-radius: 0px 0px 10px 10px;
 }
 
 .footer--icons {
