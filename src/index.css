@@ -1,0 +1,145 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #23252C;
+  color: #dcdcdc;
+  font-family: 'Inter', sans-serif;
+  text-align: center;
+}
+
+.container {
+  background-color:#1A1B21;
+  border-radius: 0px 0px 30px 30px;
+}
+
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+.info--avatar {
+  height: 50vh;
+  background: url("./assets/images/avatar.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.info--cta {
+  width: 25%;
+  color: #374151;
+  margin-block: 2em;
+  display: inline-flex;
+  place-content: center;
+  align-items: center;
+  gap: .3em;
+  background-color: #fff;
+  border: 1px solid #D1D5DB;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+  border-radius: 6px;
+  padding: .57em .8em;
+}
+
+.info--blue_cta {
+  margin-left: 1em;
+  background: #5093E2;
+  border: none;
+  color: #fff;
+}
+
+main {
+  padding: 1.3em 2.2em;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  place-content: center;
+  gap: .3em;
+}
+
+p.details {
+  line-height: 1.5;
+}
+
+h1.info--title {
+  color: #fff;
+}
+
+h1.info--title {
+  font-size: 1.6rem;
+  margin-bottom: 0;
+}
+
+h3.info--role {
+  color: #f3bf99;
+  font-size: .8rem;
+  font-weight: normal;
+}
+
+
+a.info--link {
+  color: #f5f5f5;
+  font-size: .625rem;
+}
+
+article.about {
+  margin-top: 2.2em;
+}
+
+h2.title {
+  margin:0 0 .3em;
+}
+
+article.interests {
+  margin-top: 1.4em;
+}
+
+.footer {
+  background: #161619;
+  padding: 1.2em 4.6em;
+}
+
+.fa-brands {
+  color: #918E9B;
+  width: 2em;
+  font-size: 2rem;
+}
+
+@media(min-width: 500px) {
+  .container {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  .info--avatar {
+    background-image: url("./assets/images/emkay1.png");
+  }
+
+  main,
+  header > .info--links_wrapper  {
+    text-align: left;
+  }
+
+  main {
+    display: unset;
+  }
+
+  header > .info--links_wrapper,
+  .interests,
+  .about {
+    padding: 0 2em;
+  }
+
+  header > .info--links_wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+}
